@@ -5,5 +5,7 @@ global:
 keys:
   sample-apikey-here:
     name: "Sample name"
+  use-default-uptimerobot-name:
+    name:
   other-apikey-here:
     name: "Another name"
