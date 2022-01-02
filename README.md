@@ -29,7 +29,7 @@ Typical usage
 -------
 Add script to cron, redirect output to location readable by HTTP server.
 
-*/30 * * * * ~/pum.py/venv/bin/python ~/pum.py/pum.py -d bootstrap > /tmp/pum.html && /bin/mv /tmp/pum.html /var/www/pum.html
+*/30 * * * * cd ~/pum.py && ~/pum.py/venv/bin/python ~/pum.py/pum.py -d bootstrap > /tmp/pum.html && /bin/mv /tmp/pum.html /var/www/pum.html
 
 License
 -------
