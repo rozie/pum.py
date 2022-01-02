@@ -1,0 +1,9 @@
+global:
+  ratios: "1-7-30-365"
+  requests_per_minute: 9
+
+keys:
+  sample-apikey-here:
+    name: "Sample name"
+  other-apikey-here:
+    name: "Another name"
