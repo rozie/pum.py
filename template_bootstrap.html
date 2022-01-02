@@ -23,8 +23,8 @@
 <th>All time</th>
 </thead><tbody>
 
-<tr>
 {% for check in all_checks -%}
+<tr>
   <td>{{check["name"]}}</td>
   <td>{{check["check_status"]}}</td>
   <td>{{check["check_type"]}}</td>
@@ -32,8 +32,8 @@
     <td>{{ratio}}%</td>
   {%- endfor -%}
   <td>{{check["all_time_uptime_ratio"]}}%</td>
-{%- endfor -%} 
 </tr>
+{%- endfor -%} 
 
 </tbody></table></div></div>
 <footer class="container-fluid text-center">
