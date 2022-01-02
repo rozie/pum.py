@@ -120,7 +120,6 @@ def main():
         check_data = parse_response(resp, config_name)
         all_checks.append(check_data)
         requests_count += 1
-        break
         if requests_count % requests_per_minute == 0:
             requests_count = 0
             logging.debug("Sleeping to avoid rate limit")
@@ -142,7 +141,7 @@ def parse_arguments():
         help="Display type to use")
     parser.add_argument(
         '-c', '--config', required=False,
-        default="example.yaml",
+        default="config.yaml",
         help="Configuration file"
     )
     args = parser.parse_args()
